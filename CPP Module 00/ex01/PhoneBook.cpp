@@ -6,13 +6,14 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/26 13:04:24 by aabdou            #+#    #+#             */
-/*   Updated: 2022/06/26 19:55:45 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/06/26 21:15:54 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header.hpp"
 
-PhoneBook::PhoneBook() {i = 0;};
+PhoneBook::PhoneBook() { i = 0; };
+PhoneBook::~PhoneBook() { std::cout << "Bye :^)" << std::endl; }
 
 void	PhoneBook::SearchContent(int nb)
 {

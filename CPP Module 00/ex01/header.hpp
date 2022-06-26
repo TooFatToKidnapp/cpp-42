@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/26 13:50:26 by aabdou            #+#    #+#             */
-/*   Updated: 2022/06/26 19:39:24 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/06/26 21:46:59 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,14 +32,15 @@ class PhoneBook
 {
 	private:
 		ContactInfo Info[8];
-	public:
 		int		i;
 		void	AddContact(int i);
+		void	SearchContent(int nb);
+		void	PrintContent(int i);
+	public:
+		PhoneBook();
+		~PhoneBook();
 		void	Add();
 		void	Search();
-		void	PrintContent(int i);
-		void	SearchContent(int nb);
-		PhoneBook();
 
 };
 
