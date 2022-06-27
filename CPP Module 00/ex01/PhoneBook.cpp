@@ -6,18 +6,19 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/26 13:04:24 by aabdou            #+#    #+#             */
-/*   Updated: 2022/06/26 21:15:54 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/06/27 18:37:28 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.hpp"
+#include "PhoneBook.hpp"
+#include "Contact.hpp"
 
 PhoneBook::PhoneBook() { i = 0; };
 PhoneBook::~PhoneBook() { std::cout << "Bye :^)" << std::endl; }
 
 void	PhoneBook::SearchContent(int nb)
 {
-	ContactInfo& contact = Info[nb];
+	Contact& contact = Info[nb];
 	std::cout << "first name      : " << contact.first_name << std::endl;
 	std::cout << "last name       : " << contact.last_name << std::endl;
 	std::cout << "nick name       : " << contact.nick_name << std::endl;
@@ -37,7 +38,7 @@ std::string	LengthCheck(std::string str)
 
 void	PhoneBook::PrintContent(int i)
 {
-	ContactInfo& contact = Info[i];
+	Contact& contact = Info[i];
 
 	std::cout << "|";
 	std::cout << std::setw(10) << i + 1 << "|";
@@ -74,7 +75,7 @@ void	PhoneBook::Search()
 
 void	PhoneBook::AddContact(int i)
 {
-	ContactInfo& contact = Info[i];
+	Contact& contact = Info[i];
 
 	std::cout << "first name : ";
 	std::cin >> contact.first_name;
