@@ -6,7 +6,7 @@
 #    By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/27 18:12:29 by aabdou            #+#    #+#              #
-#    Updated: 2022/06/27 18:16:54 by aabdou           ###   ########.fr        #
+#    Updated: 2022/06/28 18:34:48 by aabdou           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,9 +21,6 @@ all: $(SRC)
 		$(CC) $(FLAGS) $(SRC) -o Account
 
 clean:
-	rm -f Account.o tests.o
-
-fclean: clean
 	rm -f Account
-
+	
 re: fclean all

@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 13:37:21 by aabdou            #+#    #+#             */
-/*   Updated: 2022/06/27 18:29:07 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/06/28 16:11:40 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,6 @@ int Account::_totalAmount = 0;
 int Account::_totalNbDeposits = 0;
 int Account::_totalNbWithdrawals = 0;
 
-Account::~Account()
-{
-	_displayTimestamp();
-	std::cout << "index:" << _accountIndex << ";";
-	std::cout << "amount:" << _amount << ";";
-	std::cout << "closed" << std::endl;
-}
-
 void	Account::_displayTimestamp(void)
 {
 	time_t	t_time;
@@ -36,6 +28,15 @@ void	Account::_displayTimestamp(void)
 	strftime(buff, sizeof(buff), "%Y%m%d_%H%M%S", localtime(&t_time));
 	std::cout << "[" << buff << "] ";
 }
+
+Account::~Account()
+{
+	_displayTimestamp();
+	std::cout << "index:" << _accountIndex << ";";
+	std::cout << "amount:" << _amount << ";";
+	std::cout << "closed" << std::endl;
+}
+
 
 bool	Account::makeWithdrawal(int withdrawl)
 {
