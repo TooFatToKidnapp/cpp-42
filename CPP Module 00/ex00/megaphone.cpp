@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 17:16:54 by aabdou            #+#    #+#             */
-/*   Updated: 2022/06/26 12:20:40 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/06/28 16:37:41 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ int main(int ac, char **av)
 		i++;
 	}
 	if (av[1] == NULL)
-		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl << std::ends;
+		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
 	else
-		std::cout << std::endl << std::ends;
+		std::cout << std::endl ;
 	return 0;
 }
 

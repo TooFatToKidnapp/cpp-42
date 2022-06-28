@@ -11,9 +11,6 @@ all : $(SRC)
 	$(CC) -fsanitize=address $(FLAGS) $(SRC) -o $(NAME)
 
 clean :
-	rm -f PhoneBook.o main.o
-
-fclean : clean
 	rm -f PhoneBook
 
 re : fclean all

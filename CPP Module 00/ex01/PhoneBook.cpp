@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/26 13:04:24 by aabdou            #+#    #+#             */
-/*   Updated: 2022/06/27 18:37:28 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/06/28 18:33:12 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,15 +78,20 @@ void	PhoneBook::AddContact(int i)
 	Contact& contact = Info[i];
 
 	std::cout << "first name : ";
-	std::cin >> contact.first_name;
+	if (!(std::cin >> contact.first_name))
+		return ;
 	std::cout << "last name : ";
-	std::cin >> contact.last_name;
+	if (!(std::cin >> contact.last_name))
+		return;
 	std::cout << "nickname : ";
-	std::cin >> contact.nick_name;
+	if (!(std::cin >> contact.nick_name))
+		return;
 	std::cout << "phone number : ";
-	std::cin >> contact.phone_nb;
-	std::cout << "darkest secre : ";
-	std::cin >> contact.darkest_secret;
+	if (!(std::cin >> contact.phone_nb))
+		return;
+	std::cout << "darkest secret : ";
+	if (!(std::cin >> contact.darkest_secret))
+		return;
 }
 
 void	PhoneBook::Add()
