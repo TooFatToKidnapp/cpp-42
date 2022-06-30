@@ -6,7 +6,7 @@
 #    By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/27 18:12:29 by aabdou            #+#    #+#              #
-#    Updated: 2022/06/28 18:34:48 by aabdou           ###   ########.fr        #
+#    Updated: 2022/06/30 18:58:33 by aabdou           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,10 +17,14 @@ CC = c++
 
 FLAGS = -Wall -Wextra -Werror -std=c++98
 
-all: $(SRC)
-		$(CC) $(FLAGS) $(SRC) -o Account
+NAME = Account
+
+all: $(NAME)
+
+$(NAME):
+	$(CC) $(FLAGS) $(SRC) -o $(NAME)
 
 clean:
 	rm -f Account
-	
-re: fclean all
+
+re: clean all

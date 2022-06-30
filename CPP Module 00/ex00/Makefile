@@ -6,7 +6,9 @@ FLAGS = -Wall -Wextra -Werror -std=c++98
 
 NAME = megaphone
 
-all : $(SRC)
+all : $(NAME)
+
+$(NAME):
 	$(CC) $(FLAGS) $(SRC) -o $(NAME)
 
 clean :

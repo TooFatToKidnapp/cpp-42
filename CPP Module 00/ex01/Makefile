@@ -1,16 +1,18 @@
 SRC =	PhoneBook.cpp\
 		main.cpp
 
-CC = c++
+CC = c++ -fsanitize=address
 
 FLAGS = -Wall -Wextra -Werror -std=c++98
 
 NAME = PhoneBook
 
-all : $(SRC)
-	$(CC) -fsanitize=address $(FLAGS) $(SRC) -o $(NAME)
+all : $(NAME)
+
+$(NAME):
+	$(CC) $(FLAGS) $(SRC) -o $(NAME)
 
 clean :
 	rm -f PhoneBook
 
-re : fclean all
+re : clean all
