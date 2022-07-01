@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombieHord.cpp                                     :+:      :+:    :+:   */
+/*   HumanA.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/01 16:10:58 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/01 17:14:53 by aabdou           ###   ########.fr       */
+/*   Created: 2022/07/01 18:40:46 by aabdou            #+#    #+#             */
+/*   Updated: 2022/07/01 18:43:48 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef HUMANA_HPP
+#define HUMANA_HPP
+#include"Weapon.hpp"
 
-Zombie* zombieHord(int N, std::string name)
+class HumanA
 {
-	Zombie	*tab_Z = new Zombie[N];
-	std::stringstream	ss;
+	public:
+		Weapon weapon;
+		HumanA();
+		~HumanA();
+		void attack(std::string name, std::string weapon);
 
-	for (int i = 0; i < N; i++)
-	{
-		ss << i;
-		tab_Z[i].setName(name + ss.str());
-		tab_Z[i].announce();
-		ss.str("");
-	}
-	return tab_Z;
-}
+};
+
+#endif

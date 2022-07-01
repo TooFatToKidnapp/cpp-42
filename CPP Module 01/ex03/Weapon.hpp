@@ -1,28 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombieHord.cpp                                     :+:      :+:    :+:   */
+/*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/01 16:10:58 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/01 17:14:53 by aabdou           ###   ########.fr       */
+/*   Created: 2022/07/01 18:22:49 by aabdou            #+#    #+#             */
+/*   Updated: 2022/07/01 18:40:04 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef WEAPON_HPP
+#define WEAPON_HPP
 
-Zombie* zombieHord(int N, std::string name)
+#include <iostream>
+#include <string>
+
+class Weapon
 {
-	Zombie	*tab_Z = new Zombie[N];
-	std::stringstream	ss;
+	private:
+		std::string type;
+	public:
+		const std::string& get_type();
+		void set_Type(std::string new_type);
+		Weapon();
+		~Weapon();
 
-	for (int i = 0; i < N; i++)
-	{
-		ss << i;
-		tab_Z[i].setName(name + ss.str());
-		tab_Z[i].announce();
-		ss.str("");
-	}
-	return tab_Z;
-}
+};
+
+#endif
