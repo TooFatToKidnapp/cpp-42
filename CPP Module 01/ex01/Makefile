@@ -1,19 +1,19 @@
-NAME = Zombie
-
-SRC =	main.cpp\
-		Zombie.cpp\
-		newZombie.cpp\
-		randomChump.cpp\
+NAME = zombie
 
 CC = c++
 
-FLAGS = -Wall -Wextra -Werror -std=c++98
-all: $(NAME)
+SRC =	main.cpp\
+		Zombie.cpp\
+		zombieHord.cpp
 
-$(NAME): $(SRC)
+FLAGS = -Wall -Wextra -Werror -std=c++98
+
+all : $(NAME)
+
+$(NAME) : $(SRC)
 	$(CC) $(FLAGS) $(SRC) -o $(NAME)
 
-clean:
+clean :
 	rm -f $(NAME)
 
-re: clean all
+re : clean all
