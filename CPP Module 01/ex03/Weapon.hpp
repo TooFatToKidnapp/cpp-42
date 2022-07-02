@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/01 18:22:49 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/01 18:40:04 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/02 15:41:41 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ class Weapon
 	private:
 		std::string type;
 	public:
-		const std::string& get_type();
-		void set_Type(std::string new_type);
-		Weapon();
+		const std::string& getType();
+		void setType(std::string new_type);
+		Weapon(std::string type);
 		~Weapon();
 
 };
