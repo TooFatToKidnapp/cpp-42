@@ -1,14 +1,15 @@
-NAME = Sed_is_for_losers
+NAME = Harl
 
 CC = c++
 
 FLAGS = -Wall -Werror -Wextra -std=c++98
 
-SRC = main.cpp
+SRC =	main.cpp\
+		Harl.cpp
 
-all : $(NAME)
+all: $(NAME)
 
-$(NAME) : $(SRC)
+$(NAME): $(SRC)
 	$(CC) $(FLAGS) $(SRC) -o $(NAME)
 
 clear :

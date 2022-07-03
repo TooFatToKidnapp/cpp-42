@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanB.cpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/02 15:42:13 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/03 18:35:46 by aabdou           ###   ########.fr       */
+/*   Created: 2022/07/03 20:59:13 by aabdou            #+#    #+#             */
+/*   Updated: 2022/07/03 21:00:30 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanB.hpp"
+#include "Harl.hpp"
 
-HumanB::~HumanB(){}
-
-HumanB::HumanB(std::string name) : name(name), weaponB(NULL)
+int main(int ac, char **av)
 {
-}
+	Harl var;
 
-void HumanB::attack()
-{
-	std::cout << this->name << " attackes with their " << this->weaponB->getType() << std::endl;
-}
-
-void HumanB::setWeapon(Weapon &Weapon)
-{
-	this->weaponB = &Weapon;
+	if (ac != 2)
+		return 0;
+	var.complain(av[1]);
 }

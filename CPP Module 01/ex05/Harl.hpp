@@ -1,22 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   header.hpp                                         :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/02 18:53:20 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/02 20:42:55 by aabdou           ###   ########.fr       */
+/*   Created: 2022/07/03 18:12:56 by aabdou            #+#    #+#             */
+/*   Updated: 2022/07/03 20:41:12 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HEADER_HPP
-#define HEADER_HPP
+#ifndef HARL_HPP
+#define HARL_HPP
 
-#include<iostream>
-#include<string>
-#include<fstream>
+#include <iostream>
 
+class Harl
+{
+	private:
+		void	debug(void);
+		void	info(void);
+		void	warning(void);
+		void	error(void);
+	public:
+		Harl(void);
+		~Harl(void);
+		void	complain( std::string level);
+};
 
 
 #endif
