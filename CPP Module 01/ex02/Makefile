@@ -1,4 +1,4 @@
-NAME = zombie
+NAME = HiThisIsBrain
 
 CC = c++
 

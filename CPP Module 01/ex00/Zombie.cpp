@@ -6,13 +6,11 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 18:52:30 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/01 14:45:18 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/04 13:06:56 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
-
-Zombie::Zombie(void){}
 
 Zombie::Zombie( std::string name )
 {

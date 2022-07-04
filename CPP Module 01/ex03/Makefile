@@ -1,4 +1,4 @@
-NAME = fight
+NAME = UnnecessaryViolence
 
 SRC =	HumanA.cpp\
 		main.cpp\

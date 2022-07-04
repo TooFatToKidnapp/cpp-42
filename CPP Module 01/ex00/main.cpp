@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 18:53:09 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/01 17:00:06 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/04 13:10:45 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int main()
 {
 	int i(0);
 
-	Zombie stackZombie = Zombie("StackZombie");
+	Zombie stackZombie("StackZombie");
 	stackZombie.announce();
 	Zombie *heapZombie = newZombie("HeapZombie");
 	heapZombie->announce();
