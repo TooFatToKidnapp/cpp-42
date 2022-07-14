@@ -1,4 +1,4 @@
-NAME = Towards_A_More_Useful_Fixed-point_Number_Class
+NAME = Now_We're_Talking
 
 CC = c++
 
