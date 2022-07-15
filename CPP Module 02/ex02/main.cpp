@@ -6,13 +6,14 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 18:41:01 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/14 18:41:36 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/15 13:21:38 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-int main( void ) {
+int main( void )
+{
 	Fixed a;
 	Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
 	std::cout << a << std::endl;

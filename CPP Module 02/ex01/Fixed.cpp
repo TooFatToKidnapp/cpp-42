@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 19:18:12 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/14 18:13:39 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/15 18:15:02 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ Fixed::Fixed( const float var)
 
 Fixed& Fixed::operator=(const Fixed &var)
 {
-	std::cout << "Copy assignment operator called" << std::endl;
 	this->value = var.value;
 	return(*this);
 }

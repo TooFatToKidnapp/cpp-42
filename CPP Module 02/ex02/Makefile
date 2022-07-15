@@ -1,4 +1,4 @@
-NAME = Now_We're_Talking
+NAME = Now_We_Are_Talking
 
 CC = c++
 
