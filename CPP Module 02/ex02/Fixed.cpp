@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 13:22:28 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/15 13:49:15 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/15 21:45:08 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ Fixed &Fixed::operator=(const Fixed &var)
 
 std::ostream &operator<<(std::ostream &out, const Fixed &var)
 {
+
 	out << var.toFloat();
 	return out;
 }
