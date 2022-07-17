@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 17:51:13 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/17 10:40:07 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/17 12:59:58 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,26 @@
 
 ClapTrap::ClapTrap() : Attack(0), Hit_Point(10), Energy(10)
 {
-	std::cout << "Default constructor called " << std::endl;
+	std::cout << "ClapTrap Default constructor called " << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name) : name(name), Attack(0), Hit_Point(10), Energy(10)
 {
-	std::cout << "Default constructor called | Name = ["  << name << "]" << std::endl;
+	std::cout << "ClapTrap Default constructor called | Name = ["  << name << "]" << std::endl;
 }
 
-ClapTrap::~ClapTrap(){ std::cout << this->name <<" died lol" << std::endl;}
+ClapTrap::~ClapTrap(){ std::cout  << "ClapTrap " << this->name <<" died " << std::endl;}
 
 ClapTrap::ClapTrap(const ClapTrap &other)
 {
 	*this = other;
 	name = name + "_clone";
-	std::cout << "Copy constructor called | NAME = [" << name << "]" << std::endl;
+	std::cout << "ClapTrap Copy constructor called | NAME = [" << name << "]" << std::endl;
 }
 
 ClapTrap &ClapTrap::operator=(const ClapTrap &other)
 {
-	std::cout << "Assignment operator called" << std::endl;
+	std::cout << "ClapTrap Assignment operator called" << std::endl;
 	this->name = other.name;
 	this->Hit_Point = other.Hit_Point;
 	this->Attack = other.Attack;
@@ -82,4 +82,16 @@ void	ClapTrap::beRepaired(unsigned int amount)
 		std::cout << "ClapTrap [" << this->name << "] Hitpoints is [" << Hit_Point << "]" << std::endl;
 	}
 	std::cout << CLEAR;
+}
+
+ClapTrap::ClapTrap(std::string &name, int Attack, int Hit_point, int Energy )
+: name(name), Attack(Attack), Hit_Point(Hit_point), Energy(Energy)
+{
+	std::cout << "ClapTrap Default Constructor called | Name = [" << name << "]" << std::endl;
+}
+
+ClapTrap::ClapTrap(int Attack, int Hit_Point, int Energy)
+: Attack(Attack), Hit_Point(Hit_Point), Energy(Energy)
+{
+	std::cout << "ClapTrap Default Constructor called" << std::endl;
 }
