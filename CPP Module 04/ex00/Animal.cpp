@@ -1,32 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   FragTrap.hpp                                       :+:      :+:    :+:   */
+/*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/17 14:08:08 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/17 16:08:28 by aabdou           ###   ########.fr       */
+/*   Created: 2022/07/17 20:03:07 by aabdou            #+#    #+#             */
+/*   Updated: 2022/07/17 20:45:52 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FRAGTRAP_HPP
-#define FRAGTRAP_HPP
+#include "Animal.hpp"
 
-#include "ClapTrap.hpp"
+Animal::Animal() { std::cout << "Animal Constructor is Called" << std::endl; }
 
-class FragTrap : public ClapTrap
+Animal::Animal(std::string name) : type(name)
 {
-	public:
-		FragTrap();
-		~FragTrap();
-		FragTrap(std::string name);
-		FragTrap(const FragTrap &other);
-		FragTrap &operator=(const FragTrap &other);
+	std::cout << "Animal Constructor is Called Type = [" << type << "]" << std::endl;
+}
 
-		void attack(std::string const & target);
-		void highFivesGuys(void);
+Animal::~Animal(){ std::cout << "Animal Destructors is Called" << std::endl; }
 
-};
-
-#endif
+Animal &Animal::operator=(const Animal & other)
+{
+	this->type = other.type;
+	return *this;
+}

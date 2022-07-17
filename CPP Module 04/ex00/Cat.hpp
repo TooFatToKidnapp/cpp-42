@@ -1,32 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   FragTrap.hpp                                       :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/17 14:08:08 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/17 16:08:28 by aabdou           ###   ########.fr       */
+/*   Created: 2022/07/17 19:06:53 by aabdou            #+#    #+#             */
+/*   Updated: 2022/07/17 19:13:59 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FRAGTRAP_HPP
-#define FRAGTRAP_HPP
+#ifndef CAT_HPP
 
-#include "ClapTrap.hpp"
+#define CAT_HPP
 
-class FragTrap : public ClapTrap
+#include "Animal.hpp"
+
+class Cat : public Animal
 {
 	public:
-		FragTrap();
-		~FragTrap();
-		FragTrap(std::string name);
-		FragTrap(const FragTrap &other);
-		FragTrap &operator=(const FragTrap &other);
-
-		void attack(std::string const & target);
-		void highFivesGuys(void);
-
+		Cat();
+		~Cat();
+		Cat(std::string type);
+		Cat &operator=(const Cat &other);
+		
 };
 
 #endif
