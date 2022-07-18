@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/26 13:04:24 by aabdou            #+#    #+#             */
-/*   Updated: 2022/06/29 16:53:50 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/18 14:15:21 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ void	PhoneBook::AddContact(int i)
 	Contact& contact = Info[i];
 
 	std::cout << "first name : ";
-	if (!(std::cin >> contact.first_name))
+	if (!(std::cin >> Info[i].first_name))
 		return ;
 	std::cout << "last name : ";
 	if (!(std::cin >> contact.last_name))

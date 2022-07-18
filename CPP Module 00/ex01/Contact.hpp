@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 18:32:27 by aabdou            #+#    #+#             */
-/*   Updated: 2022/06/27 18:33:36 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/18 14:16:35 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ class Contact
 		std::string nick_name;
 		std::string phone_nb;
 		std::string darkest_secret;
-
 };
 
 #endif

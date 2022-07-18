@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/17 19:06:56 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/17 19:12:05 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/18 17:20:31 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,12 @@ class Dog : public Animal
 	public:
 		Dog();
 		~Dog();
-		Dog(std::string type);
+		Dog(std::string &type);
+		Dog(const Dog &other);
 		Dog &operator=(const Dog &other);
-		void makeSound();
 
+		virtual void makeSound() const ;
+		void setType(std::string type);
 };
 
 #endif
