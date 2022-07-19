@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/26 13:04:24 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/19 14:03:21 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/19 18:50:10 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ void	PhoneBook::Search()
 		std::cout << "PhoneBook is empty ..." << std::endl;
 	else if (nb <= i && nb >= 0)
 		SearchContent(nb);
-
+ 
 }
 
 void	PhoneBook::AddContact(int i)
