@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 13:18:22 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/18 17:17:54 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/19 12:21:46 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ Dog::Dog(const Dog &other) : Animal(other)
 Dog::~Dog()
 {
 	std::cout << YELLOW;
-	std::cout << "Dog Destructors is Called" << std::endl;
+	std::cout << "Dog Destructors is Called [" << this->type << "]"<< std::endl;
 	std::cout << CLEAR;
 }
 
@@ -45,7 +45,7 @@ Dog & Dog::operator=(const Dog &other)
 	return *this;
 }
 
-void Dog::makeSound() const 
+void Dog::makeSound() const
 {
 	std::cout << YELLOW;
 	std::cout << "The Dog is Barking" << std::endl;

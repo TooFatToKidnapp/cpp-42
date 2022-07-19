@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 20:26:35 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/18 20:40:43 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/19 13:52:55 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,13 @@
 
 #include "WrongAnimal.hpp"
 
-class WrongCat
+class WrongCat : public WrongAnimal
 {
-	private:
-		std::string type;
 	public:
 		WrongCat();
 		~WrongCat();
 		WrongCat(const WrongCat &other);
-		WrongCat & operator=(const WrongCat &other);
+		WrongCat& operator=(const WrongCat &other);
 
 		WrongCat(std::string &type);
 		void makeSound() const;

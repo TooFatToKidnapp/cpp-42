@@ -6,7 +6,9 @@ RM = rm -f
 SRCS =  main.cpp\
         Cat.cpp\
         Dog.cpp\
-        Animal.cpp
+        Animal.cpp\
+		WrongAnimal.cpp\
+		WrongCat.cpp\
 
 OBJT = $(SRCS:.cpp=.o)
 
@@ -19,7 +21,7 @@ $(OBJT): $(SRCS)
 
 all : $(NAME)
 clean:
-	$(RM) $(NAME)
+	$(RM) $(OBJT)
 fclean:
 	$(RM) $(OBJT) $(NAME)
 

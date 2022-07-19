@@ -6,20 +6,20 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 19:01:43 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/18 20:44:24 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/19 13:51:24 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "WrongAnimal.hpp"
 
-WrongAnimal::WrongAnimal() : type("-")
+WrongAnimal::WrongAnimal() : type("")
 {
 	std::cout << CYAN;
 	std::cout << "WrongAnimal Constructor called" << std::endl;
 	std::cout << CLEAR;
 }
 
-WrongAnimal::WrongAnimal(const std::string &type) : type(type)
+WrongAnimal::WrongAnimal(const std::string &name) : type(name)
 {
 	std::cout << CYAN;
 	std::cout << "WrongAnimal Constructor with type [" << type << "]" <<" called" << std::endl;
@@ -39,6 +39,7 @@ WrongAnimal &WrongAnimal::operator=(const WrongAnimal & other)
 	std::cout << "WrongAnimal Assignment operator is called " << std::endl;
 	this->type = other.type;
 	std::cout << CLEAR;
+	return *this;
 }
 
 void WrongAnimal::makeSound() const
