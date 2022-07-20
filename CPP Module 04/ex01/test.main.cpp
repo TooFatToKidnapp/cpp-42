@@ -1,3 +1,4 @@
+#include "Dog.hpp"
 #include "Brain.hpp"
 
 int main()

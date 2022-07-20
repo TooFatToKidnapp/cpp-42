@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 15:55:59 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/19 17:02:09 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/20 09:54:25 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ int Brain::addIdea(const std::string &idea)
 {
 	if (i < 100)
 	{
-		idea[i] = idea;
+		ideas[i] = idea;
 		i++;
 		return i;
 	}

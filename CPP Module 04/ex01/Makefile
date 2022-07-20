@@ -7,6 +7,7 @@ SRCS =  main.cpp\
         Cat.cpp\
         Dog.cpp\
         Animal.cpp\
+		Brain.cpp\
 
 OBJT = $(SRCS:.cpp=.o)
 
