@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/22 12:01:48 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/22 14:54:51 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/23 09:27:03 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int		main()
 	std::cout << Form1 << std::endl;
 	std::cout << Bureaucrat0 << std::endl;
 
-	std::cout << "[ signForm Form0 ! ]" << std::endl;
+	std::cout << "[ signForm " << Form0.getName() << " ! ]" << std::endl;
 	std::cout << std::endl;
 	Bureaucrat0.signForm(Form0);
 	try
@@ -41,7 +41,7 @@ int		main()
 		std::cout << Form0 << std::endl;
 	}
 	std::cout << std::endl;
-	std::cout << "[ signForm Form1 ! ]" << std::endl;
+	std::cout << "[ signForm " << Form1.getName() << " ! ]" << std::endl;
 	std::cout << std::endl;
 	Bureaucrat0.signForm(Form1);
 	try
