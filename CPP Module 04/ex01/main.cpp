@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/17 19:10:31 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/20 15:53:30 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/21 13:58:59 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,17 @@
 #include "Cat.hpp"
 #include "Dog.hpp"
 #include "Brain.hpp"
-#include "unistd.h"
-#include <memory>
 
 int main(void)
 {
-	//std::unique_ptr<Animal> dog(new Dog());
 	const Animal* dog = new Dog();
-	std::cout << "--------------------------here \n";
 	const Animal* cat = new Cat();
-	//static_cast<Dog*>(dog.get())->addBrainIdea
+
 	((Dog*)dog)->addBrainIdea("food!!!love!!!");
 	((Dog*)dog)->addBrainIdea("play!!!fun!!!");
 	((Dog*)dog)->addBrainIdea("love me!!!");
 	((Dog*)dog)->addBrainIdea("");
-	// std::cout << ((Dog*)dog)->getBrainIdea(4) << "\n";
-	// std::cout << "here\n";
+
 	((Cat*)cat)->addBrainIdea("not bad");
 	((Cat*)cat)->addBrainIdea("good");
 	((Cat*)cat)->addBrainIdea("hmm...");
@@ -74,6 +69,6 @@ int main(void)
 	std::cout << "\n ================= Bye Bye ================= \n\n";
 	for(; ++i < (int)amount;)
 		delete animals[i];
-	//system("leaks Polymorphism");
+
 	return 0;
 }
