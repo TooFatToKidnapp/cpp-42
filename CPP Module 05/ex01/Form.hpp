@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/22 12:57:10 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/22 14:38:59 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/23 18:07:38 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ class Form
 {
 	private:
 		const std::string name;
-		unsigned int sign_grade;
-		unsigned int execute_grade;
+		const unsigned int sign_grade;
+		const unsigned int execute_grade;
 		bool signature;
 
 	public:
@@ -50,7 +50,6 @@ class Form
 			public:
 				const char *what() const throw();
 		};
-
 };
 
 std::ostream &operator<<(std::ostream &out, const Form &other);

@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/22 12:57:10 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/23 10:26:17 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/23 18:13:13 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ class Form
 {
 	private:
 		const std::string name;
-		unsigned int sign_grade;
-		unsigned int execute_grade;
+		const unsigned int sign_grade;
+		const unsigned int execute_grade;
 		bool signature;
 
 	public:

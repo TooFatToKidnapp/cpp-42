@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 17:36:34 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/22 12:13:54 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/23 17:59:52 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 class Bureaucrat
 {
 	private:
-		std::string		name;
-		unsigned int	grade;
+		const std::string		name;
+		unsigned int			grade;
 	public:
 		Bureaucrat();
 		~Bureaucrat();
@@ -32,7 +32,7 @@ class Bureaucrat
 		unsigned int getGrade() const;
 		void incrementGrade();
 		void decrementGrade();
-
+		
 		class GradeTooHighException : public std::exception
 		{
 			public:

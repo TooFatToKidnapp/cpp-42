@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 17:46:58 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/22 12:21:24 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/23 17:59:40 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@ Bureaucrat::Bureaucrat() { std::cout << "Bureaucrat Constructor is called" << st
 
 Bureaucrat::~Bureaucrat() { std::cout << "Bureaucrat [" << name << "] Destructor is called" << std::endl; }
 
-Bureaucrat::Bureaucrat(const std::string &name, unsigned int grade)
+Bureaucrat::Bureaucrat(const std::string &name, unsigned int grade) : name(name)
 {
 	std::cout << "Bureaucrat Constructor called | name : " << name << ", grade : " << grade << std::endl;
-	this->name = name;
+	//this->name = name;
 	try
 	{
 		if (grade < 1)
@@ -43,7 +43,7 @@ Bureaucrat::Bureaucrat(const Bureaucrat &other)
 Bureaucrat& Bureaucrat::operator=(const Bureaucrat& other)
 {
 	std::cout << "Bureaucrat Copy Operator is called" << std::endl;
-	name = other.name;
+	(std::string)name = other.name;
 	grade = other.grade;
 	return *this;
 }
