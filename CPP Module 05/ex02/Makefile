@@ -21,9 +21,9 @@ $(OBJT): $(SRCS)
 
 all : $(NAME)
 clean:
-	$(RM) $(OBJT)
+	$(RM) $(OBJT) Shrubbery_shrubbery
 fclean:
-	$(RM) $(OBJT) $(NAME)
+	$(RM) $(OBJT) $(NAME) Shrubbery_shrubbery
 
 re:	clean all
 

@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/22 12:01:48 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/23 11:04:58 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/23 11:07:37 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@
 
 void	InternMakeForm(std::string formName, std::string target)
 {
-	Intern	soooh;
+	Intern	Ali;
 	Form*	form;
-	form = soooh.MakeForm(formName, target);
+	form = Ali.MakeForm(formName, target);
 
 	if (form)
 	{

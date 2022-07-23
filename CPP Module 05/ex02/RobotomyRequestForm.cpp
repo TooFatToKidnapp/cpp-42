@@ -6,7 +6,7 @@
 /*   By: aabdou <aabdou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 10:00:18 by aabdou            #+#    #+#             */
-/*   Updated: 2022/07/23 10:31:00 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/07/23 17:22:14 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ void RobotomyRequestForm::execute(Bureaucrat const &executor) const
 	if (executor.getGrade() > getExcuteGrade())
 		throw(GradeTooLowException());
 	std::cout << "beep boop beep! ";
+	srand(time(0));
 	if (std::rand() % 2 == 0)
 		std::cout << this->getTarget() << " robot was created" << std::endl;
 	else
